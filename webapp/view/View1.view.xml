@@ -1,0 +1,106 @@
+<mvc:View
+    controllerName="tile.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content >
+                        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop " header="Simple Tile with frametype OneByHalf"
+		                            frameType="OneByHalf" subheader="Subtitle">
+	                    </GenericTile> 
+
+                        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop " header="Simple Tile with frametype TwoByHalf"
+		                            subheader="Subtitle" frameType= "TwoByHalf">
+		                    <TileContent unit="EUR" footer="Current Quarter">
+			                    <ImageContent src="sap-icon://home-share" />
+		                    </TileContent>
+	                    </GenericTile>
+
+                        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Right click to open in new tab"
+		                             subheader="Link tile" press="press" url="https://www.sap.com/" headerImage="photos/sap.png" >
+		                    <TileContent>
+			                    <ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/SAPLogoLargeTile_28px_height.png" />
+		                    </TileContent>
+	                    </GenericTile>                        
+
+                        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop " header="Tile With Numeric Content " subheader="Expenses">
+		                    <TileContent unit="Unit" footer="Footer Text">
+			                    <NumericContent value="1762" icon="sap-icon://line-charts" withMargin="false" />
+		                    </TileContent>
+	                    </GenericTile>
+
+                        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Country-Specific Profit Margin"
+				                     frameType = "OneByHalf" subheader="Expenses" press="onPress">
+		                    <TileContent unit="EUR" footer="Current Quarter" >
+			                    <NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false" />
+		                    </TileContent>
+	                    </GenericTile>
+
+                        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+	                                 backgroundImage="photos/pant.jpg"
+	                                 frameType="OneByOne">
+		                    <TileContent footer="Delhi  Capital" frameType="OneByOne">
+			                    <NewsContent
+					                contentText="At 19, Rishabh Pant has gone through all the highs
+                                     and lows of a cricketing career. A promising talent from Delhi"
+					                subheader="Cricket" />
+		                    </TileContent>
+	                    </GenericTile>
+
+                        <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="2500">
+		                    <GenericTile    backgroundImage="photos/harman.jfif"
+				                            frameType="TwoByOne" >
+			                    <TileContent footer="August 21, 2016">
+				                    <NewsContent contentText="HarmanPreet to Feature in HUNDRED"
+						                        subheader="Womens Cricket" />
+			                    </TileContent>
+		                    </GenericTile>
+		                    <GenericTile backgroundImage="photos/virat.jfif"
+				                        frameType="TwoByOne" state="Failed">
+			                    <TileContent footer="August 21, 2016">
+				                    <NewsContent
+						                contentText="Virat Kohli and Anushka Sharma
+                                         have once again joined hands to do their bit in the fight against the COVID-19 pandemic"
+						                subheader="Covid19" />
+			                    </TileContent>
+		                    </GenericTile>
+                            <GenericTile backgroundImage="photos/yubraj2.jfif"
+				                        frameType="TwoByOne" state="Failed">
+			                    <TileContent footer="August 21, 2016">
+				                    <NewsContent
+						                contentText="Yuvraj was a key contributor to India's maiden, and so far the only,
+                                         T20 World Cup win in 2007,"
+						                subheader="Covid19" />
+			                    </TileContent>
+		                    </GenericTile>
+                            <GenericTile backgroundImage="photos/yubraj1.jfif"
+				                        frameType="TwoByOne" state="Loading">
+			                    <TileContent footer="August 21, 2016">
+				                    <NewsContent
+						                contentText="Yuvraj Singh is an Indian former international cricketer who played
+                                                     in all formats of the game. An all-rounder who bats left-handed in the middle order and bowls ..."
+						                subheader="Covid19" />
+			                    </TileContent>
+		                    </GenericTile>
+
+	                    </SlideTile>
+
+                        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Feed Tile that shows updates of the last feeds given to a specific topic:"
+				                     frameType="TwoByOne">
+		                    <TileContent footer="New Notifications">
+			                    <FeedContent contentText="I'II be more Happy if you call
+                                                         me Ravindra Jadeja: Jadeja as Bhogle calls him sir."
+						            subheader="5 mins ago By CricBuzz" value="07" />
+		                    </TileContent>
+	                    </GenericTile>
+
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
